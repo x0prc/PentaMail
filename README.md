@@ -19,6 +19,21 @@
 - End: The process concludes.
 
 # Features
+1. **Certificate Authority (CA)**
+    - Issues and manages digital certificates for users.
+    - Responsible for signing the public keys of users.
+2. **Registration Authority (RA)**
+    - Verifies user identities before issuing certificates.
+    - Acts as a mediator between users and the CA.
+3. **Email Client Integration**
+    - Supports S/MIME for signing and encrypting emails.
+    - Provides a user-friendly interface for managing certificates.
+4. **Email Server**
+    - Handles sending and receiving emails securely.
+    - Uses TLS/SSL to secure email transport.
+5. **Certificate Lifecycle Management**
+    - Automates the processes of certificate issuance, renewal, and revocation.
+    - Ensures compliance with security policies.
 
 # Motivation
 
