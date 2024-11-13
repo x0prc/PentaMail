@@ -20,6 +20,10 @@ mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: t
 app.use('/api/email', emailRoutes); // Email routes
 app.use('/api/certificate', certificateRoutes); // Certificate routes
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the PKI Email System!');
+});
+
 const PORT = process.env.PORT || 5001;
 const server = app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
