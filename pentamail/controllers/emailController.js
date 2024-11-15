@@ -1,5 +1,17 @@
 const nodemailer = require('nodemailer');
 const User = require('../models/userModel');
+const emailService = require('../services/emailService');
+
+exports.sendEmail = async (req, res) => {
+    const { recipient, subject, message } = req.body;
+
+    try {
+        const result = await emailService.sendEmail(recipient, subject, message);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
 
 exports.sendEmail = async (req, res) => {
     const { recipient, subject, message } = req.body;
