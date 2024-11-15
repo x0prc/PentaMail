@@ -36,6 +36,7 @@
     - Ensures compliance with security policies.
 
 # Motivation
+In an increasingly digital world, the need for secure communication has never been more critical. As we rely on email for both personal and professional interactions, the potential risks associated with data breaches, identity theft, and unauthorized access have escalated. This project aims to address these challenges by developing a robust PKI based secure email communication system that has a minimalist and user friendly UI to explain the working.
 
 # Pre-requisites
 
