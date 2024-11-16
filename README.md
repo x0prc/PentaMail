@@ -39,12 +39,34 @@
 In an increasingly digital world, the need for secure communication has never been more critical. As we rely on email for both personal and professional interactions, the potential risks associated with data breaches, identity theft, and unauthorized access have escalated. This project aims to address these challenges by developing a robust PKI based secure email communication system that has a minimalist and user friendly UI to explain the working.
 
 # Pre-requisites
+- React.js
+- Axios
+- MongoDB
+- Node.js
 
 # Installation
+- Step 1: Clone the Repository <br>
+`git clone https://github.com/x0prc/pentamail.git`
 
-# Usage
+- Step 2: Install Dependencies <br>
+`npm install`
 
-# Contributing
+- Step 3: Create a .env File: <br>
+Create a .env file in the root of your backend directory and add the following environment variables: <br>
+```
+MONGODB_URI=mongodb://127.0.0.1:27017/pkiEmail
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-email-password
+PORT=5001
+CA_KEY_PATH=./ca.key
+CA_CERT_PATH=./ca.crt
+```
 
-# Usage
+- Step 4: Start MongoDB Server <br>
+`mongod`
+
+- Step 5: Start the Node Server <br>
+`npm start`
+
+
 
